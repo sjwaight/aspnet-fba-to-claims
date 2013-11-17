@@ -15,14 +15,7 @@ namespace BobSmithDemoWebApp
 
         protected void Submit1_Click(object sender, EventArgs e)
         {
-            if(Membership.ValidateUser(UserEmail.Text, UserPass.Text))
-            {
-                FormsAuthentication.RedirectFromLoginPage(UserEmail.Text, Persist.Checked);
-            }
-            else
-            {
-                Msg.Text = "Invalid credentials. Please try again.";
-            }
+            // this page could be deleted.
         }
     }
 }
